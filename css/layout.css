@@ -5,21 +5,21 @@
     background-color: #fff;
 }
 
-.layout-cabecalho--home {    
-    position: fixed;    
-    top: 0;    
+.layout-cabecalho--home {
+    position: fixed;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 1;
 }
-  
+
 .layout-cabecalho img {
     margin-top: 12px;
 }
 
 .layout-planos {
     padding: 80px 0;
-} 
+}
 
 .layout-chamada {
     padding: 80px 0;
@@ -40,4 +40,10 @@
 
     color: #fff;
     text-align: center;
+}
+
+@media (max-width: 749px) {
+    .layout-planos .row > div:not(.ultima-coluna) {
+        margin-bottom: 40px;
+    }
 }
