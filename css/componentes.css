@@ -1,7 +1,6 @@
-/*-----------------*\
- PLANO
-\*-----------------*/
-
+/*--------------------*\
+  PLANO
+\*--------------------*/
 .plano {
   position: relative;
 
@@ -9,6 +8,7 @@
   border: 1px solid #95a4a5;
 
   font-size: 1.4rem;
+  /* 14px */
 }
 
 .plano--mais-popular::after {
@@ -22,6 +22,7 @@
   color: #fff;
 
   font-size: 0.7142em;
+  /* 10px */
   line-height: 2.5;
 
   content: "MAIS POPULAR";
@@ -64,16 +65,17 @@
   text-align: center;
 }
 
-/*-----------------*\
-  BOTAO
-\*-----------------*/
 
+/*--------------------*\
+  BOTAO
+\*--------------------*/
 .botao {
   display: inline-block;
   padding: 0.8em 1.2em;
 
   background-color: #bbb;
   color: #fff;
+  border: none;
 
   line-height: normal;
   font-size: 1em;
@@ -111,9 +113,10 @@
   background-color: #003b6a;
 }
 
-/*-----------------*\
- CHAMADA
-\*-----------------*/
+
+/*--------------------*\
+  CHAMADA
+\*--------------------*/
 .chamada {
   font-size: 1.6rem;
   /* 1.6 * 10px = 16px */
@@ -126,7 +129,7 @@
   color: #fff;
 
   font-size: 3.375em;
-  /* 54px * 16px = 3.375 */
+  /* 54px / 16px = 3.375 */
   line-height: 0.9;
   text-shadow: 1px 1px #313131;
 }
@@ -149,13 +152,14 @@
     padding-right: 10%;
 
     font-size: 2.2rem;
+    /* 2.2 * 10px = 22px */
   }
 }
 
-/*-----------------*\
- DEPOIMENTO
-\*-----------------*/
 
+/*--------------------*\
+  DEPOIMENTO
+\*--------------------*/
 .depoimento {
   font-size: 2.2rem;
   /* 22px */
@@ -188,6 +192,7 @@
   color: #ccc;
 
   font-size: 8em;
+  /* 176px */
 
   content: "\201C";
 }
@@ -207,18 +212,24 @@
   margin-top: 10px;
 }
 
-/*-----------------*\
- NAVEGACAO
-\*-----------------*/
+
+/*--------------------*\
+  NAVEGACAO
+\*--------------------*/
 .navegacao {}
+
+.navegacao--assinatura {
+  text-align: center;
+}
 
 .navegacao__menu {
   float: right;
 }
 
-/*-----------------*\
- BOTAO-CHAVEADOR
-\*-----------------*/
+
+/*--------------------*\
+  BOTAO-CHAVEADOR
+\*--------------------*/
 .botao-chaveador {
   width: 24px;
   height: 24px;
@@ -236,10 +247,10 @@
   }
 }
 
-/*-----------------*\
- MENU
-\*-----------------*/
 
+/*--------------------*\
+  MENU
+\*--------------------*/
 .menu {
   margin: 0;
 
@@ -277,9 +288,11 @@
   .menu__item--botao {
     margin-top: 20px;
   }
+
 }
 
 @media(min-width: 992px) {
+
   .menu__item {
     display: inline-block;
     padding-right: 20px;
@@ -288,4 +301,51 @@
   .menu__item:last-of-type {
     padding-right: 0px;
   }
+
+}
+
+
+/*--------------------*\
+  TITULO-FORMULARIO
+\*--------------------*/
+.titulo-formulario {
+  margin: 0;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid #ccc;
+
+  font-size: 2.6rem;
+  font-weight: normal;
+  color: #004b86;
+}
+
+
+/*--------------------*\
+  GRUPO-ENTRADA
+\*--------------------*/
+.grupo-entrada {
+  margin-bottom: 15px;
+}
+
+.grupo-entrada > label {
+  display: block;
+
+  font-weight: bold;
+}
+
+
+/*--------------------*\
+  CAMPO
+\*--------------------*/
+.campo {
+  display: block;
+  width: 100%;
+  height: 2.8em;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background-color: #fff;
+
+  font-size: 1.4rem;
 }
