@@ -1,5 +1,6 @@
 .layout-cabecalho {
     height: 60px;
+    line-height: 60px;
     border: 1px solid #ccc;
 
     background-color: #fff;
@@ -11,10 +12,6 @@
     right: 0;
     left: 0;
     z-index: 1;
-}
-
-.layout-cabecalho img {
-    margin-top: 12px;
 }
 
 .layout-planos {
